@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AntonioS</title>
+    {% load static %}
+
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css'%}">
+ 
+</head>
+
+<body>
+   
+   
+    <section class="contenedorPortada">
+        <div class="contenedorSeccionPort">
+            <div class="fondo"></div>
+            <div class="contenedorPresBut">
+                <div class="contenedorBorde">
+                    <div class="contenedorPresentacion">
+                        <h1 class="present-name-bold  ">Construyendo calidad</h1>
+                        <hr class="linea">
+                        <h2 class="present-name-heigth ">Creando confianza</h2>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="verMas "><a href="#info">Ver más</a></div>
+            </div>
+        </div>
+
+    </section>
+    {% include "navbar.html" %}
+    
+
+    <section class="contenedorInfo">
+        <div class="contenedorSeccionInfo">
+            <div class="infoSomos">
+                <h3 class="infoPres">Servicio de cálidad a precio justo</h3>
+                <h2 class="infoTitulo">QUIÉNES SOMOS</h2>
+                <p class="infoText">Somos una empresa peruana con amplia experiencia en carpintería y ebanistería. Nos
+                    especializamos en la fabricación de muebles como mesas, sillas, estanterías, armarios y camas,
+                    garantizando calidad e innovación. Ofrecemos opciones de personalización en madera y acabados para
+                    adaptarnos a sus preferencias. También trabajamos con melamine para oficinas, hogares, negocios y
+                    hoteles.
+                </p>
+                <p class="infoText">La calidad de nuestros productos nos ha permitido crecer y convertirnos en la
+                    empresa que hoy en día somos. Nuestro compromiso se centra en brindar soluciones que integren
+                    funcionalidad, diseño y durabilidad, satisfaciendo las más altas expectativas de los clientes. </p>
+            </div>
+            <div class="infoImg">
+                <div class="imagenInfo "></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white bg-gray-900 containerGeneral">
+        <div class="container px-6 py-10 mx-auto">
+            
+            <div class=" contenedorCartas grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-2">
+                <div class=" imagenZoom flex items-end overflow-hidden bg-cover rounded-lg h-96 "
+                    style="background-image:url('https://images.unsplash.com/photo-1621111848501-8d3634f82336?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1565&q=80') ">
+                    <div class=" aparecer ">
+                        <div
+                            class=" w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white-60 bg-gray-800-60">
+                            <h2 class="h2 mt-4 text-xl font-semibold text-gray-800 capitalize text-white">Best
+                                website
+                                collections</h2>
+                            <p class="p mt-2 text-lg tracking-wider text-blue-500 uppercase text-blue-400 ">Website
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-end overflow-hidden bg-cover rounded-lg h-96 imagenZoom"
+                    style="background-image:url('https://images.unsplash.com/photo-1621609764180-2ca554a9d6f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80')">
+                    <div class=" aparecer ">
+                        <div
+                            class=" w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white-60 bg-gray-800-60">
+                            <h2 class="h2 mt-4 text-xl font-semibold text-gray-800 capitalize text-white">Block of Ui
+                                kit
+                                collections</h2>
+                            <p class="p mt-2 text-lg tracking-wider text-blue-500 uppercase text-blue-400 ">Ui kit</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-end overflow-hidden bg-cover rounded-lg h-96 imagenZoom"
+                    style="background-image:url('https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')">
+                    <div class=" aparecer ">
+                        <div
+                            class="  w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white-60 bg-gray-800-60">
+                            <h2 class="h2 mt-4 text-xl font-semibold text-gray-800 capitalize text-white">Ton’s 
+                                of
+                                mobile
+                                mockup</h2>
+                            <p class="p mt-2 text-lg tracking-wider text-blue-500 uppercase text-blue-400 ">Mockups</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-end overflow-hidden bg-cover rounded-lg h-96 imagenZoom"
+                    style="background-image:url('https://images.unsplash.com/photo-1603380353725-f8a4d39cc41e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')">
+                    <div class=" aparecer ">
+                        <div
+                            class="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white-60 bg-gray-800-60">
+                            <h2 class="h2 mt-4 text-xl font-semibold text-gray-800 capitalize text-white">Huge
+                                collection
+                                of
+                                animation</h2>
+                            <p class="p mt-2 text-lg tracking-wider text-blue-500 uppercase text-blue-400 ">Animation
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contenedorValores"></section>
+    <section class="contenedorInfo"></section>
+    <section class="info1"></section>
+    <section class="info2"></section>
+    {% include "footer.html" %}
+</body>
+
+</html>

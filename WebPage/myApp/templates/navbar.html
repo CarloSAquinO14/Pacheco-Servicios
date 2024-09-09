@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link type="text/css" rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+<body>
+    <header id="info" class="contenedorHeader">
+        <div class="contenedorNavLog">
+            <div class="contenedorLogName">
+                <a class="contenedorLogo" href="{% url 'index' %}">
+                    <img src="{% static 'imagen/logo.png'%}" alt="Logo" class="logo">
+                </a>
+                <p class="fusion-name">
+                    <span class="fusion-name-bold name-bold">Diseño en</span>
+                    <span class="fusion-name-heigth name-heigth ">carpintería</span>
+                </p>
+            </div>
+            <br>
+            <nav class="contenedorNav">
+                <ul class="menu">
+                    <li class="items"><a class="link-menu" href="{% url 'inicio' %}">INICIO</a></li>
+                    <li class="items"><a class="link-menu" href="{% url 'producto' %}">PRODUCTOS</a></li>
+                    <li class="items"><a class="link-menu" href="{% url 'servicios' %}">SERVICIOS</a></li>
+                    <li class="items"><a class="link-menu" href="{% url 'contacto' %}">CONTACTO</a></li>
+                    <span class="item-traslado"></span>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
